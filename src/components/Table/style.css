@@ -1,0 +1,77 @@
+.apiTable{
+  display: flex;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: calc(8px + .5vw);
+  width: 80%;
+}
+td,th{
+  padding: 5px 10px;
+}
+td {
+  background-color: azure;
+}
+td:first-child{
+  font-weight: bold;
+}
+thead tr {
+  background: black;
+  height: 50px;
+  color: white;
+}
+table tbody tr {
+  height: 2vw;
+}
+table td, table th {
+  text-align: left;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  table {
+    font-size: calc(6px + 1vw);
+  }
+  td,th{
+    padding: 5px 5px
+  }
+  thead tr {
+    background: black;
+    height: 1px;
+    color: white;
+  }
+  table tbody tr {
+    height: .5vw;
+  }
+}
+@media (max-width: 764px) {
+  table{
+    font-size: calc(6px + .2vw);
+    border-radius: 5px;
+    width: 100%;
+  }
+  td,th{
+    height: 2.5vh;
+    padding: 5px 5px;
+  }
+  thead tr {
+    background: black;
+    height: 1px;
+    color: white;
+  }
+  table tbody tr {
+    height: 1px;
+  }
+}

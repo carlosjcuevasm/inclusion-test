@@ -1,0 +1,50 @@
+.statusBoxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:1vw;
+}
+@media (max-width: 1024px) {
+  .statusBoxes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .statusBoxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.statusBox {
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: azure;
+
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.statusBox__title{
+  background-color: black;
+  color: white;
+  margin:0;
+  font-size: calc(10px + 1vw);
+}
+.statusBox__body{
+  display: flex;
+  flex-direction: column;  
+}
+.statusBox__health{
+  background-color: rgb(138, 209, 138);
+  margin:0;
+}
+.statusBox__health.--isDown{
+  background-color: rgb(245, 135, 135);
+}
+.statusBox__hostname.--isDown{
+  color: red;
+  font-weight: bold;
+}
+
