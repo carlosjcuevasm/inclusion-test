@@ -1,7 +1,7 @@
 .statusBoxes {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap:1vw;
+  gap: 1vw;
 }
 @media (max-width: 1024px) {
   .statusBoxes {
@@ -16,7 +16,7 @@
 .statusBox {
   display: flex;
   flex-direction: column;
-  
+
   text-align: center;
   text-transform: uppercase;
 
@@ -26,25 +26,24 @@
   border-radius: 10px;
   overflow: hidden;
 }
-.statusBox__title{
+.statusBox__title {
   background-color: black;
   color: white;
-  margin:0;
+  margin: 0;
   font-size: calc(10px + 1vw);
 }
-.statusBox__body{
+.statusBox__body {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
-.statusBox__health{
+.statusBox__health {
   background-color: rgb(138, 209, 138);
-  margin:0;
+  margin: 0;
 }
-.statusBox__health.--isDown{
+.statusBox__health.--isDown {
   background-color: rgb(245, 135, 135);
 }
-.statusBox__hostname.--isDown{
+.statusBox__hostname.--isDown {
   color: red;
   font-weight: bold;
 }
-

@@ -1,5 +1,7 @@
-.apiTable{
-  display: flex;
+.table {
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
 }
 
 table {
@@ -10,16 +12,17 @@ table {
   overflow: hidden;
   margin: auto;
   text-transform: uppercase;
-  font-size: calc(8px + .5vw);
+  font-size: calc(8px + 0.5vw);
   width: 80%;
 }
-td,th{
+td,
+th {
   padding: 5px 10px;
 }
 td {
   background-color: azure;
 }
-td:first-child{
+td:first-child {
   font-weight: bold;
 }
 thead tr {
@@ -30,13 +33,16 @@ thead tr {
 table tbody tr {
   height: 2vw;
 }
-table td, table th {
+table td,
+table th {
   text-align: left;
 }
-table td.c, table th.c {
+table td.c,
+table th.c {
   text-align: center;
 }
-table td.r, table th.r {
+table td.r,
+table th.r {
   text-align: center;
 }
 
@@ -44,8 +50,9 @@ table td.r, table th.r {
   table {
     font-size: calc(6px + 1vw);
   }
-  td,th{
-    padding: 5px 5px
+  td,
+  th {
+    padding: 5px 5px;
   }
   thead tr {
     background: black;
@@ -53,16 +60,17 @@ table td.r, table th.r {
     color: white;
   }
   table tbody tr {
-    height: .5vw;
+    height: 0.5vw;
   }
 }
 @media (max-width: 764px) {
-  table{
-    font-size: calc(6px + .2vw);
+  table {
+    font-size: calc(6px + 0.2vw);
     border-radius: 5px;
     width: 100%;
   }
-  td,th{
+  td,
+  th {
     height: 2.5vh;
     padding: 5px 5px;
   }

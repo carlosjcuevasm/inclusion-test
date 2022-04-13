@@ -1,5 +1,4 @@
-.App{
-  
+.App {
   position: relative;
 }
 .viewButton {
@@ -7,23 +6,21 @@
   top: 0;
   right: 0;
 
-  padding: calc(4px + .5vw);
+  padding: calc(4px + 0.5vw);
 
-  
   background: white;
   color: black;
-  
+
   text-transform: uppercase;
-  font-size: calc(6px + .5vw);
+  font-size: calc(6px + 0.5vw);
   font-weight: bold;
-  
+
   border: none;
   border-radius: 5px;
 
   cursor: pointer;
-
 }
-.viewTitle{
+.viewTitle {
   text-align: center;
   text-transform: uppercase;
 }
