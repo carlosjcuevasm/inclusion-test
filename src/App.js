@@ -3,7 +3,7 @@ import Table from "./components/Table/index";
 import StatusBoxes from "./components/StatusBoxes/index";
 import "./App.css";
 
-//MODITHY THIS NUMBER TO CHANGE UPDATE FREQUENCY. VALUE IN SECONDS
+//MODIFY THIS NUMBER TO CHANGE UPDATE FREQUENCY. VALUE IN SECONDS
 let TIME_TO_UPDATE = 15;
 
 TIME_TO_UPDATE *= 1000;
